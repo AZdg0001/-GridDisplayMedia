@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Zandro D. Grejaldo - 4D</title>
+    <link rel="stylesheet" href="az.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">AZ - 4D</div>
+        <ul class="sidebar-menu">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('gallery')">Gallery</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </aside>
+
+    <header class="header-section">
+        <img src="hd.png" alt="Header Banner" class="header-image">
+    </header>
+
+    <main class="main-grid-container">
+        
+ 
+        <section id="home" class="page-section active">
+            <section class="grid-banner">
+                <img src="gr.png" alt="Home Hero" class="banner-image">
+            </section>
+
+            <section class="three-column-grid">
+                <div class="grid-item left-item">
+                    <img src="l.png" alt="Left">
+                </div>
+                <div class="grid-item middle-item">
+                    <img src="m.png" alt="Middle">
+                </div>
+                <div class="grid-item right-item">
+                    <img src="r.png" alt="Right">
+                </div>
+            </section>
+
+            <section class="two-column-grid">
+                <div class="grid-item bottom-left">
+                    <img src="f.png" alt="Bottom Left">
+                </div>
+                <div class="grid-item bottom-right">
+                    <img src="pt.png" alt="Bottom Right">
+                </div>
+            </section>
+
+            <section class="item-section">
+                <div class="grid-item item-full">
+                    <img src="it.png" alt="Featured">
+                </div>
+            </section>
+        </section>
+
+
+        <section id="gallery" class="page-section">
+            <div class="section-title">Gallery</div>
+            <section class="three-column-grid">
+                <div class="grid-item left-item">
+                    <img src="l.png" alt="Gallery Left">
+                </div>
+                <div class="grid-item middle-item">
+                    <img src="m.png" alt="Gallery Middle">
+                </div>
+                <div class="grid-item right-item">
+                    <img src="r.png" alt="Gallery Right">
+                </div>
+            </section>
+            <section class="two-column-grid">
+                <div class="grid-item bottom-left">
+                    <img src="f.png" alt="Gallery Bottom Left">
+                </div>
+                <div class="grid-item bottom-right">
+                    <img src="pt.png" alt="Gallery Bottom Right">
+                </div>
+            </section>
+        </section>
+
+        <section id="about" class="page-section">
+            <img src="it.png" alt="About" class="section-image">
+        </section>
+
+
+        <section id="contact" class="page-section">
+            <div class="contact-container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <p><strong>Name:</strong> Alexis Zandro D. Grejaldo</p>
+                    <p><strong>Class:</strong> 4D</p>
+                    <p><strong>Web:</strong> https://support.github.com </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-section">
+        <img src="ft.png" alt="Footer" class="footer-image">
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+ 
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
